@@ -886,7 +886,7 @@ h1 {
     padding: 1em;
   }
   .card {
-    padding: 0.4em 1em;
+    padding: 0.2em 1em;
   }
   .column {
     flex: 0 0 33.33%;
@@ -896,7 +896,7 @@ h1 {
 }
 .faculty
 {
-  margin-left: 300px;
+  margin-left: 250px;
 }
 .mail{
   text-transform: lowercase;
