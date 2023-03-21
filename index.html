@@ -27,11 +27,12 @@
         <div class="tophalfOverlay">
           <img src="./img/Logo.png" alt="logo" class="logo" >
           <video loop autoplay muted plays-inline class="back-video">
-            <source src="./img/VID-20230321-WA0027.mp4" type="video/mp4">
+            <source src="./img/VID-20230321-WA0054.mp4" type="video/mp4">
           </video>
 
            <div class="mainTitle">
              Aeronauts
+             <h6 class="cap" >Drone Club</h6>
            </div>
            <div class="subTitle">
              GEC Wayanad
@@ -117,12 +118,58 @@
         Drone Club Diaries
       </div>
       <div class="miniSep"></div>
-
       <div class="imgCont">
-        <img class="roboAchImg" src="./Diaries/37a4184d-a917-4a78-80d5-b7ef58748eae_7.jpg" alt="">
-        <img class="roboAchImg" src="./Diaries/_MG_8577_1.JPG" alt="">
-        <img class="roboAchImg" src="./Diaries/IMG_20220108_115350_440_8.jpg" alt="">
-        <img class="roboAchImg" src="./Diaries/IMG_8794_2.JPG" alt="">
+        <!--image slider start-->
+        <div class="slider">
+          <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+              <img src="./Diaries/37a4184d-a917-4a78-80d5-b7ef58748eae_7.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./Diaries/_MG_8577_1.JPG" alt="">
+            </div>
+            <div class="slide">
+              <img src="./Diaries/IMG_20220108_115350_440_8.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="./Diaries/IMG_8794_2.JPG" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+          </div>
+          <!--manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+          <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }}, 5000);
+          </script>
       </div>
 
       
