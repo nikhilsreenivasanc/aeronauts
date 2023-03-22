@@ -1,0 +1,89 @@
+@import "./theme";
+
+body {
+    font-family: $font2;
+    color: #444444;
+}
+
+html {
+    &::-webkit-scrollbar-track {
+        -webkit-box-align: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar {
+        width: 2px;
+        background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border: 2px solid #009961;
+    }
+}
+
+a {
+    color: #009961;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00cc81;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font1;
+}
+
+
+section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #8fffd6;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #009961;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+    color: #777777;
+    font-size: 15px;
+}
+
+
+
+@import './partials/preloader';
+@import './partials/breadcrumbs';
+@import './pages/index';
+@import './partials/footer';
+@import './partials/header';
