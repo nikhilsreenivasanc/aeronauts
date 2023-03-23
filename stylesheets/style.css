@@ -13,16 +13,16 @@ html::-webkit-scrollbar {
 }
 html::-webkit-scrollbar-thumb {
   background-color: #000000;
-  border: 2px solid #009961;
+  border: 2px solid #15e159;
 }
 
 a {
-  color: #009961;
+  color:rgba(12, 234, 123, 0.667);
   text-decoration: none;
 }
 
 a:hover {
-  color: #00cc81;
+  color:#1574e1;
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ section {
 }
 
 .section-bg {
-  background-color: #8fffd6;
+  background-color:#15e18c;
 }
 
 .section-title {
@@ -62,7 +62,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #009961;
+  background:#15e156;
   bottom: 0;
   left: 0;
 }
@@ -1203,4 +1203,13 @@ section {
 
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
+}
+.twit{
+  font-size: 2rem;
+  margin: 10px;
+}
+.med{
+  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 10rem;
 }
